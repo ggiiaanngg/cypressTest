@@ -23,7 +23,10 @@ describe('Kiem tra dang nhap', function() {
       //cy.contains('Giao bài tập').click();
       cy.get('.pull-right > .btn > .d-none').click();
       //cy.wait(1000);
-      cy.get('.modal-body > :nth-child(7)').type('nn');
+      cy.get(':nth-child(3) > .ng-select > .ng-select-container > .ng-arrow-wrapper').click()
+      cy.get(':nth-child(3) > .ng-select > .ng-select-container > .ng-arrow-wrapper')
+      cy.contains('tiếng anh').click()
+      cy.get(':nth-child(7) > .form-control').type('nn',{force : true});
 
       
     })
