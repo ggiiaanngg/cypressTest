@@ -22,7 +22,7 @@ describe('Kiem tra dang nhap', function() {
       cy.wait(7000);
       //cy.contains('Giao bài tập').click();
       cy.get('.pull-right > .btn > .d-none').click();
-      cy.get(':nth-child(3) > .ng-select > .ng-select-container > .ng-value-container').type('akj', force ='true');
+      cy.get(':nth-child(3) > .ng-select > .ng-select-container > .ng-value-container').type('akj', {force :true});
       
       //cy.wait(1000);
     
